@@ -44,12 +44,16 @@
     outline: none;
 }
 
+
 .header_midden{
     display: flex;
     flex: 1;
     justify-content: center;
 }
-
+.options{
+    display: flex;
+    justify-content: center;
+}
 .header_midden .material-icons{
     font-size: xx-large;
     color: grey;
@@ -98,6 +102,8 @@
     margin: 0 10px;
     cursor: pointer;
 }
+
+
 
 /*sidebar css code*/
 .sidebar{
@@ -158,6 +164,9 @@
     padding: 10px 0;
     display: flex;
 }
+.main_body .storys{
+    align-items: center;
+}
 
 .main_body{
     display: flex;
@@ -169,7 +178,7 @@
 
 .feed{
     flex: 1;
-    padding: 30px 100px;
+    padding: 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
