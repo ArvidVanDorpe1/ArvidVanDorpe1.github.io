@@ -178,7 +178,7 @@
 
 .feed{
     flex: 1;
-    padding: 30px 50px;
+    padding: 30px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,13 +186,14 @@
 }
 
 .sidebar{
-    padding: 25px 10px;
+    padding: 25px 0px;
     flex: 0.33;
+    
 }
 
 /*post css code*/
 .post{
-    width: 100%;
+    width: 75%;
     margin-top: 15px;
     border-radius: 15px;
     background-color: white;
@@ -201,6 +202,10 @@
 
 .post_image{
     width: 100%;
+    overflow: hidden;
+}
+.post_image img{
+    width: fit-content;
 }
 
 .post_top{
@@ -219,16 +224,19 @@
 
 .post_topinfo h3{
     font-size: medium;
+    padding-left: 5px;
 }
 .post_topinfo p{
     font-size: small;
     color: grey;
+    padding-left: 5px;
 }
 
 .post_bottom{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px 25px;
+    padding-left: 5px;
 }
 
 .post_options{
@@ -257,4 +265,75 @@
 .post_option:hover{
     background-color: #eff2f5;
     border-radius: 10px;
+}
+
+.widgets{
+    flex: 0.33;
+    background-color: #f1f2f5;
+    position: sticky;
+    padding: 37px 10px;
+}
+
+#myBtn {
+    
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: red; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+.storys{
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-width: 810px){
+    .sidebar{
+        display: none;
+    }
+    .storys{
+        justify-content: center;
+        overflow: scroll;
+    }
+
+    .header_input input{
+        display: none;
+    }
+
+    .header_midden{
+        display: none;
+    }
+    .header_info{
+        display: none;
+    }
+
+    .widgets{
+        display: none;
+    }
+
+    .feed{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 810px){
+    .storys{
+        width: 100%;
+        overflow: scroll;
+    }
 }
